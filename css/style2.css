@@ -1,0 +1,247 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3089531, 2015-09-11T00:35:38-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Libertad-Light by TipoType
+ * URL: http://www.myfonts.com/fonts/tipotype/libertad/light/
+ *
+ * Webfont: Libertad by TipoType
+ * URL: http://www.myfonts.com/fonts/tipotype/libertad/regular/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3089531
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2014 by Fernando Diaz. All rights reserved.
+ *
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2f247b");
+
+@font-face {
+    font-family: 'Libertad-Light';
+    src: url('2f247b_0_unhinted_0.woff2') format('woff2'),
+         url('2f247b_0_unhinted_0.woff') format('woff'),
+         url('2f247b_0_unhinted_0.ttf') format('truetype'),
+    }
+
+
+body{
+    background-color: #F8B711 !important;
+}
+
+.video{
+    position: absolute;
+    z-index: -99;
+    display: none;
+}
+.image-video{
+    display: block;
+    z-index: -98;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://3.bp.blogspot.com/-rZmCIp0C-hQ/Tx6aCFeweoI/AAAAAAAAAnQ/WqIEVBTIzRk/s1600/Cool-Tiger-Wallpaper-1920x1080-HD.jpg");
+}
+.pattern{
+    background-image: url('../img/pattern.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.texto{
+    margin-top: 5em;
+    z-index: 99;
+    position: absolute;
+    font-size: 1.5em;
+    background-color: #F8B711;
+    padding: 0.5em;
+}
+.form{
+    z-index: 99;
+    position: absolute;
+}
+.form .email{
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 10em;
+}
+.form .btn{
+    margin-top: 1em;
+    border-radius: 100%;
+    height: 4em;
+    width: 5em;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: solid 1px white;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form .btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255,255,255,0.20);
+    box-shadow:none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+}
+#btn-play{
+    z-index: 100;
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left: 0.8em;
+    color: white;
+}
+#btn-pause{
+    z-index: 100;
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left: 0.8em;
+    color: white;
+    display: none;
+
+}
+.nav{
+    z-index: 101;
+    position: absolute;
+    background-color: #F8B711;
+    text-decoration: none;
+    color: #000;
+}
+.nav .nav-group a{
+    text-decoration: none;
+}
+.nav .nav-group a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.a-visited{
+    font-family: 'Libertad-ExtraBold', Arial;
+}
+.nav-group{
+    margin-left: 1em;
+}
+.icones i{
+    text-decoration: none;
+    margin-right: 1.5em;
+}
+.icones i:hover{
+    text-decoration: none;
+    color: #000;
+}
+.nav-home-top{
+    background-color: #F8B711;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Libertad-ExtraBold', Arial;
+}
+.nav-home-top a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-home-menu{
+
+    color: #000;
+}
+.nav-home-menu a{
+    font-family: 'Libertad-Light';
+    text-decoration: none;
+    color: #000;
+}
+.nav-home-menu a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.nav-small-icons{
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+    font-size: 2.5em;
+}
+@media only screen and (min-width: 992px){
+    body{
+        height: 100%;
+    }
+    .nav{
+        height: 3em;
+        padding-top: 0.5em;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .nav .nav-group a{
+        text-decoration: none;
+    }
+    .nav-home-top{
+        height: 3em;
+        padding-top: 0.5em;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .nav-home-menu{
+        font-size: 2.5em;
+        margin-top: 7em;
+    }
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*extra small devices*/
+@media only screen and (max-height: 568px) and (max-width: 390px){
+    .nav-home-menu{
+        font-size: 2em;
+        width: 100%;
+        height: 5em;
+        margin-top: 5em;
+    }
+    .nav-home-menu .nav-group{
+        height: 100%;
+    }
+    .nav-home-menu .nav-group a{
+
+    }
+    .texto{
+        height: 10em;
+        text-overflow: ellipsis;
+        white-space: normal;
+        overflow: hidden;
+        font-size: 1.5em;
+    }
+    .form{
+        margin-top: 2em;
+    }
+}
+
+/* small devices */
+@media only screen and (min-width: 375px) {
+    .nav-home-menu{
+        font-size: 3em;
+        width: 100%;
+        height: 5em;
+        margin-top: 5em;
+    }
+    .nav-home-menu .nav-group{
+        height: 100%;
+    }
+    .nav-home-menu .nav-group a{
+
+    }
+}
