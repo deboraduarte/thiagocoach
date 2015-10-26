@@ -6,50 +6,46 @@
 body{
     background-color: #F8B711 !important;
 }
+.icons li:first-child{
+    margin-left: 4em;
+}
 .icons li{
     float: left;
+    margin-left: 1em;
 }
 .voce-alem-ico{
     background: url('../img/icon-logo.svg');
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-    display: none;
-    margin-left: 60px;
+    height: 3em;
+    width: 3em;
+    margin-left: 10em;
+    display: block;
 }
 .logo{
-    background: url('../img/logo.svg');
-    height: 100%;
+    height: auto;
+    padding-right: 0 !important;
+}
+.facebook-ico, .twitter-ico, .maps-ico, .instagram-ico, .chats-ico, .play-ico{
     background-repeat: no-repeat;
+    display: block;
 }
 .facebook-ico{
     background: url('../img/icons/facebook.svg');
-    background-repeat: no-repeat;
-    display: block;
 }
 .twitter-ico{
     background: url('../img/icons/twitter.svg');
-    background-repeat: no-repeat;
-    display: block;
 }
 .maps-ico{
     background: url('../img/icons/maps.svg');
-    background-repeat: no-repeat;
-    display: block;
 }
 .instagram-ico{
     background: url('../img/icons/instagram.svg');
-    background-repeat: no-repeat;
-    display: block;
 }
 .chats-ico{
     background: url('../img/icons/chat.svg');
-    background-repeat: no-repeat;
-    display: block;
 }
 .play-ico{
-    background: url('../img/icons/play.svg');
-    display: block;
+    background: url('../img/icons/play.svg') no-repeat;
 }
 /*-------------------- End Icons -------------------------*/
 
@@ -67,11 +63,12 @@ body{
     background-color: #000;
     color: #F8B711;
     text-align: center;
+    border: none;
 }
 .informations{
     background-color: #F8B711;
     color: #000;
-    border:none;
+    border: none;
     font-family: 'Libertad-Light'
 }
 
@@ -94,573 +91,164 @@ body{
 .nav-home-menu a{
     color: #000;
 }
+.nav-group{
+    position: relative;
+}
 li{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Small Retina devices */
-@media only screen and (min-width: 2040px) and (min-height: 1500px){
-    .nav-home-menu{
-        font-size: 60pt;
-        margin-top: 300px;
-        position: relative;
-        display: block;
+/*
+ * Responsive Devices
+*/
+
+/*
+ * Desktops (Medium and Large Devices)
+ */
+ @media only screen and (min-width: 1300px){
+    .icons li{
+        margin-top: 20em;
     }
-    .nav-home-menu ul{
-        margin-top: 300px;
-        margin-left: 50px;
-    }
-    .nav-home-menu li{
-        padding-bottom: 50px;
-    }
-    .voce-alem-ico{
-        display: none;
-    }
-    .logo{
-        margin-top: 300px;
-        height: 600px;
-        background-size: 1900px auto;
-        margin-left: 200px;
-        display: block;
-    }
-    .icons{
-        margin-left: 710px;
-        width: 100%;
-    }
-    .facebook-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .twitter-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .maps-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .instagram-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .chats-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
+    .facebook-ico, .twitter-ico, .maps-ico, .instagram-ico, .chats-ico{
+        width: 3em;
+        height: 3em;
     }
     .play-ico{
-        height: 200px;
-        width: 200px;
-        background-size: 200px;
-        margin-left: 900px;
-        margin-top: 200px;
+        width: 4.5em;
+        height: 4.5em;
+        margin-top: 5em;
     }
+    .nav-home-menu a{
+        font-size: 2.875em;
+    }
+    .nav-group{
+         margin-top: 20em;
+    }
+
     .title{
-        font-size: 60pt;
-        margin-top: 200px;
+        font-size: 2.875em;
+        margin-top: 5em;
     }
     .text{
-        width: 800px;
-        margin-top: 100px;
-        font-size: 45pt;
-        margin-left: 650px;
+        margin-top: 3em;
+        font-size: 2.5em;
     }
     .button{
-        display: block;
-        font-size: 60pt;
-        width: 900px;
-        height: 120px;
-        border-radius: 10px;
-        margin-top: 200px;
-        margin-left: 550px;
-    }
-    form{
-        margin-top: 200px;
-        width: 700px;
-
+        margin-top: 3em;
+        font-size: 2.5em;
+        border-radius: 0.3em;
     }
     .informations{
-        margin-left: 650px;
-        margin-bottom: -100px;
-        width: 700px;
-        height: 300px;
-        font-size: 60pt;
+        font-size: 3em;
+        margin-top: 1em;
+    }
+    .informations:first-child{
+        margin-top: 3em;
+    }
+ }
+ /*
+ * Mobile (Small and Extra Small Default)
+ */
+ @media only screen and (max-width: 800px){
+    .facebook-ico, .twitter-ico, .maps-ico, .instagram-ico, .chats-ico{
+        width: 3em;
+        height: 3em;
+    }
+    .icons li{
+        margin-top: 5em;
+    }
+    .play-ico{
+        width: 3em;
+        height: 3em;
+        margin-top: 5em;
+    }
+    .logo{
+        margin-top: 7em;
+    }
+    .nav-home-menu a{
+        font-size: 2.875em;
+    }
+    .nav-group li:first-child{
+        margin-top: 5em;
+    }
+    .title{
+        font-size: 1.875em;
+    }
+    .text{
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+    .button{
+        margin-top: 3em;
+        font-size: 2em;
+        border-radius: 0.3em;
+    }
+    .informations{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    .informations:first-child{
+        margin-top: 3em;
+    }
+ }
+
+ /*
+ * Mobile (Max Width  370px)
+ */
+@media screen and (max-width: 370px){
+    .facebook-ico, .twitter-ico, .maps-ico, .instagram-ico, .chats-ico{
+        width: 2em;
+        height: 2em;
+    }
+    .nav-home-menu a{
+        font-size: 1.875em;
+    }
+    .title{
+        font-size: 1.875em;
+    }
+    .text{
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+    .button{
+        margin-top: 3em;
+        font-size: 1.7em;
+        border-radius: 0.3em;
     }
 }
-
-@media only screen and (min-width: 1500px) and (min-height: 2040px){
-    .nav-home-menu{
-        font-size: 60pt;
-        margin-top: 300px;
-        position: relative;
-        display: block;
-    }
-    .nav-home-menu ul{
-        margin-top: 200px;
-    }
-    .nav-home-menu li{
-        padding-bottom: 50px;
-    }
-    .voce-alem-ico{
-        display: none;
+/*
+* Mobile Tablets (Min Width  600px)
+ */
+@media screen and (max-width: 810px) and (min-width: 600px  ){
+    .facebook-ico, .twitter-ico, .maps-ico, .instagram-ico, .chats-ico{
+        width: 3.5em;
+        height: 3.5em;
     }
     .logo{
-        background: url('../img/icon-logo.svg') no-repeat;
-        margin-top: 300px;
-        height: 800px;
-        background-size: auto;
-        margin-left: 350px;
-        display: block;
+        margin-top: 10em;
     }
-    .icons{
-        margin-left: 460px;
-        width: 100%;
+    .icons li{
+        margin-top: 10em;
     }
-    .facebook-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
+    .nav-home-menu a{
+        font-size: 2.875em;
     }
-    .twitter-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .maps-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .instagram-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .chats-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .play-ico{
-        height: 200px;
-        width: 200px;
-        background-size: 200px;
-        margin-left: 650px;
-        margin-top: 200px;
+    .nav-group li:first-child{
+        margin-top: 15em;
     }
     .title{
-        font-size: 60pt;
-        margin-top: 200px;
+        margin-top: 5em;
+        font-size: 2.875em;
     }
     .text{
-        width: 800px;
-        margin-top: 100px;
-        font-size: 45pt;
-        margin-left: 350px;
+        margin-top: 3em;
+        font-size: 2em;
     }
     .button{
-        display: block;
-        font-size: 60pt;
-        width: 900px;
-        height: 120px;
-        border-radius: 10px;
-        margin-top: 200px;
-        margin-bottom: 200px;
-        margin-left: 300px;
-    }
-    form{
-        margin-top: 200px;
-        width: 700px;
-
-    }
-    .informations{
-        margin-left: 380px;
-        margin-bottom: -100px;
-        width: 700px;
-        height: 300px;
-        font-size: 60pt;
-    }
-}
-
-/* iphone 4*/
-@media only screen and (max-width: 640px) and (max-height: 960px){
-    .nav-home-menu{
-        font-size: 50pt;
-        margin-top: 100px;
-        position: relative;
-        display: block;
-    }
-    .nav-home-menu ul{
-        margin-top: 100px;
-        margin-left: 350px;
-        width: 450px;
-    }
-    .nav-home-menu li{
-        padding-bottom: 20px;
-    }
-    .voce-alem-ico{
-        display: none;
-    }
-    .logo{
-        margin-top: 200px;
-        height: 350px;
-        width: 1000px;
-        background-size:cover;
-        margin-left: 100px;
-        display: block;
-    }
-    .icons{
-        width: 100%;
-        margin-left: 280px;
-    }
-    .facebook-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-    }
-    .twitter-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-    }
-    .maps-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-    }
-    .instagram-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-    }
-    .chats-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-    }
-    .play-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-        margin-left: 250px;
-        margin-top: 100px;
-    }
-    .title{
-        font-size: 60pt;
-        margin-top: 20px;
-    }
-    .text{
-        margin-top: 50px;
-        font-size: 40pt;
-    }
-    .button{
-        display: block;
-        font-size: 45pt;
-        width: 610px;
-        height: 100px;
-        border-radius: 20px;
-        margin-top: 100px;
-        margin-left: 15px;
-    }
-    form{
-        margin-top: 50px;
-        width: 250px;
-
-    }
-    .informations{
-        margin-left: 160px;
-        margin-bottom: -100px;
-        width: 250px;
-        height: 300px;
-        font-size: 60pt;
-    }
-}
-/* iphone 6*/
-@media only screen and (max-width: 750px) and (max-height: 1334px) and (min-width: 740px) and (min-height: 1330px){
-    .nav-home-menu{
-        font-size: 50pt;
-        margin-top: 300px;
-        position: relative;
-        display: block;
-    }
-    .nav-home-menu ul{
-        margin-top: 300px;
-        margin-left: 150px;
-        width: 450px;
-    }
-    .nav-home-menu li{
-        padding-bottom: 20px;
-    }
-    .voce-alem-ico{
-        display: none;
-    }
-    .logo{
-        margin-top: 100px;
-        height: 250px;
-        width: 750px;
-        background-size:cover;
-        margin-left: 50px;
-        display: block;
-    }
-    .icons{
-        margin-left: 50px;
-        height: 100px;
-        margin-top: 200px;
-    }
-    .facebook-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .twitter-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .maps-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .instagram-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .chats-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .play-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-        margin-left: 300px;
-        margin-top: 100px;
-    }
-    .title{
-        font-size: 60pt;
-        margin-top: 20px;
-    }
-    .text{
-        margin-top: 100px;
-        font-size: 40pt;
-        width: 600px;
-        margin-left: 80px;
-    }
-    .button{
-        display: block;
-        font-size: 45pt;
-        width: 610px;
-        height: 100px;
-        border-radius: 20px;
-        margin-top: 100px;
-        margin-left: 70px;
-    }
-    form{
-        margin-top: 50px;
-        width: 250px;
-
-    }
-    .informations{
-        margin-left: 250px;
-        margin-bottom: -100px;
-        width: 250px;
-        height: 300px;
-        font-size: 60pt;
-    }
-}
-
-/* iphone 6 Plus*/
-@media only screen and (max-width: 1080px) and (max-height: 1920px) and (min-width: 1070px) and (min-height: 1900px){
-    .nav-home-menu{
-        font-size: 50pt;
-        margin-top: 300px;
-        position: relative;
-        display: block;
-    }
-    .nav-home-menu ul{
-        margin-top: 700px;
-        margin-left: 300px;
-        width: 450px;
-    }
-    .nav-home-menu li{
-        padding-bottom: 20px;
-    }
-    .logo{
-        margin-top: 100px;
-        height: 300px;
-        width: 1000px;
-        background-size:cover;
-        margin-left: 150px;
-        display: block;
-    }
-    .icons{
-        margin-left: 200px;
-        height: 100px;
-    }
-    .facebook-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .twitter-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .maps-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .instagram-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .chats-ico{
-        height: 150px;
-        width: 120px;
-        background-size: 100px;
-    }
-    .play-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-        margin-left: 450px;
-        margin-top: 300px;
-    }
-    .title{
-        font-size: 60pt;
-        margin-top: 250px;
-    }
-    .text{
-        margin-top: 100px;
-        font-size: 40pt;
-        width: 700px;
-        margin-left: 200px;
-    }
-    .button{
-        display: block;
-        font-size: 60pt;
-        width: 900px;
-        height: 120px;
-        border-radius: 20px;
-        margin-top: 300px;
-        margin-left: 90px;
-    }
-    form{
-        margin-top: 50px;
-        width: 250px;
-
-    }
-    .informations{
-        margin-left: 200px;
-        margin-bottom: -100px;
-        width: 650px;
-        height: 300px;
-        font-size: 60pt;
-    }
-}
-
-/*  Desktop */
-@media only screen and (max-width: 1920px) and (max-height: 1080px) and (min-width: 1900px) and (min-height: 1070px){
-    .nav-home-menu{
-        font-size: 35pt;
-        margin-top: 300px;
-    }
-    .nav-home-menu ul{
-        height: 100px;
-        margin-top: 500px;
-        margin-left: 400px;
-    }
-    .nav-home-menu li{
-        float: left;
-        margin-right: 200px;
-    }
-    .logo{
-        display: none;
-    }
-    .voce-alem-ico{
-        display: block;
-    }
-    .icons{
-        margin-left: 750px;
-        margin-top: 370px;
-        height: 120px;
-        width: 450px;
-    }
-    .facebook-ico{
-        height: 150px;
-        width: 70px;
-        background-size: 60px;
-    }
-    .twitter-ico{
-        height: 150px;
-        width: 70px;
-        background-size: 60px;
-    }
-    .maps-ico{
-        height: 150px;
-        width: 70px;
-        background-size: 60px;
-    }
-    .instagram-ico{
-        height: 150px;
-        width: 70px;
-        background-size: 60px;
-    }
-    .chats-ico{
-        height: 65px;
-        width: 70px;
-        background-size: 60px;
-    }
-    .play-ico{
-        height: 100px;
-        width: 100px;
-        background-size: 100px;
-        margin-left: 900px;
-        margin-top: 200px;
-    }
-    .title{
-        font-size: 35pt;
-        margin-top: 100px;
-    }
-    .text{
-        margin-top: 100px;
-        font-size: 25pt;
-        width: 600px;
-        margin-left: 650px;
-    }
-    .button{
-        display: block;
-        font-size: 25pt;
-        width: 400px;
-        height: 60px;
-        padding-top: 5px;
-        border-radius: 20px;
-        margin-top: 200px;
-        margin-left: 750px;
-        margin-bottom: -200px;
-    }
-    form{
-        margin-top: 100px;
-        width: 250px;
-
-    }
-    .informations{
-        margin-left: 670px;
-        margin-bottom: -100px;
-        width: 500px;
-        height: 150px;
-        font-size: 25pt;
+        margin-top: 3em;
+        font-size: 2.5em;
+        border-radius: 0.3em;
     }
 }

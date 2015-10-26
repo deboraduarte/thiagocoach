@@ -35,21 +35,17 @@ function onYouTubeIframeAPIReady(){
 
 function onPlayerReady(event){
     $('#btn-play').on('click', function() {
-        $('.image-video').css('display', 'none')
         $('.video').css('display', 'block')
         $('#btn-play').css('display', 'none')
         $('#btn-pause').css('display','block')
-        $('.texto').css('visibility', 'hidden')
-        $('.form').css('visibility', 'hidden')
+        $('.content').css('visibility', 'hidden')
         event.target.playVideo()
     })
     $('#btn-pause').on('click', function() {
-        $('.image-video').css('display', 'block')
         $('.video').css('display', 'none')
         $('#btn-play').css('display', 'block')
         $('#btn-pause').css('display','none')
-        $('.texto').css('visibility', '')
-        $('.form').css('visibility', '')
+        $('.content').css('visibility', '')
         event.target.stopVideo()
     })
 
